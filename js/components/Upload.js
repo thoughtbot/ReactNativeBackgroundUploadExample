@@ -119,7 +119,10 @@ export default class ReactNativeBackgroundUploadExample extends Component {
             onPress={() => this.onPressUpload({
               url: 'http://localhost:3000/upload_multipart',
               field: 'uploaded_media',
-              type: 'multipart'
+              type: 'multipart',
+              params: {
+                test: "hello world",
+              }
             })}
           />
         </View>
